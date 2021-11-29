@@ -1,0 +1,117 @@
+.nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  width: 100%;
+  background-color: #12304e;
+  flex-wrap: wrap;
+  margin-bottom: 10vh;
+  align-items: center;
+}
+.nav img {
+  width: 5%;
+  height: 5%;
+}
+
+.nav h3 {
+  font-family: "Rosarivo", serif;
+  font-weight: 400;
+  color: #ed5826;
+  font-size: 48px;
+  width: 80%;
+  text-align: center;
+  height: 68px;
+  padding: inherit;
+}
+
+.btn {
+  background: #ff4742;
+  border: 1px solid #ff4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #ff4742;
+}
+
+.btn:active {
+  opacity: 0.5;
+}
+
+.container {
+  width: 80vw;
+  height: 60vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border-radius: 16px;
+  background: linear-gradient(225deg, #133353, #102b46);
+  box-shadow: -29px 29px 11px #0a1b2c, 29px -29px 11px #1a4570;
+}
+
+.divImg {
+  width: 100%;
+  height: 100%;
+}
+.divImg img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.description {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 100%;
+  height: 100%;
+  background-color: #12304e;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.description h2 {
+  width: 90%;
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 25px;
+}
+.description label {
+  color: #fff;
+  text-align: center;
+  width: 80%;
+  font-size: 25px;
+  padding: 15px;
+  border-radius: 25px;
+  border: 1px solid #fff;
+  box-shadow: 3px 100px 100px -37px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,9 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#0C198C",
+    "titleBar.activeBackground": "#1123C4",
+    "titleBar.activeForeground": "#FCFCFF"
+  },
+  "cSpell.words": ["Bindear", "Paginacion", "PRECARGA", "precargar"],
+  "cSpell.ignoreWords": ["MANEJADOR"]
+}

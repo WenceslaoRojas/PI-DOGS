@@ -1,0 +1,27 @@
+
+routerDog.post("/dog", (req, res) => {
+  console.log(
+    "___________________________________LLEGO____________________________________________________"
+  );
+  let arrTemp = [];
+  axios
+    .get("https://api.thedogapi.com/v1/breeds")
+    .then((response) => {
+      response.data.map((e) => {
+        if (e.temperament) {
+          arrTemp.push(...e.temperament.split(/\s*,\s*/));
+        }
+      });
+      const temp = new Set(arrTemp);
+      let result = [...temp];
+      result.map((e) => {
+        const data = Temperamentos.create({
+          name: e,
+        });
+      });
+      res.send(result);
+    })
+    .catch((err) => {
+      res.status(400).send({ msg: "que paja", err: err });
+    });
+});

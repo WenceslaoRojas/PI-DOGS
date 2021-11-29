@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+.cardContainer {
+  position: relative;
+  width: 20%;
+  height: 40vh;
+  margin: 20px 10px;
+  box-shadow: 0 20px 60px -6px black;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.temperamento {
+  display: flex;
+  flex-wrap: wrap;
+  height: 15vh;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.temperamentoLabel {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.p {
+  /* margin-top: -10px; */
+}
+.cardTitle {
+  display: block;
+  text-align: center;
+  color: #fff;
+  background-color: #6184a8;
+  padding: 2%;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+.card {
+  height: 35vh;
+  border-radius: 25px;
+}
+
+.card img {
+  width: 100%;
+  /* height: -webkit-fill-available; */
+  height: 35vh;
+  overflow: scroll;
+  /* border-radius: inherit; */
+  border-bottom-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
+
+.cardDesc {
+  font-family: "IBM Plex Mono", monospace;
+  display: block;
+  font-size: 1.2rem;
+  position: absolute;
+  height: 0;
+  width: 100%;
+  top: 0;
+  opacity: 0;
+  padding: 18px 8%;
+  background-color: #f5f2e6;
+  transition: 0.8s ease;
+  overflow: hidden;
+  border-bottom-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  /* border-top-right-radius: 3px;
+  border-top-left-radius: 3px; */
+}
+
+.card:hover .cardDesc {
+  opacity: 1;
+  height: 40vh;
+  margin-top: 10.7%;
+}
+
+/* --------------------BTN------------------ */
+
+.cta {
+  cursor: url(./2icons8-jake.svg), auto;
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  margin-top: 21px;
+  margin-left: 35px;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #234567;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #b1dae7;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active {
+  transform: scale(0.95);
+}

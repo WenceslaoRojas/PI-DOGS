@@ -1,0 +1,25 @@
+.divOrder {
+  width: 30%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.label {
+  font-family: "Rosarivo", serif;
+  font-size: 20px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.divOrder select {
+  border-radius: 15px;
+  width: 60%;
+  text-align: center;
+  height: 30px;
+  border: 3px solid #ed5826;
+  outline: none;
+}

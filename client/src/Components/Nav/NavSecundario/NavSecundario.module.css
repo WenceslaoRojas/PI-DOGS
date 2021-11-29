@@ -1,0 +1,63 @@
+.nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #12304e;
+  flex-wrap: wrap;
+  margin-bottom: 10vh;
+  align-items: center;
+}
+.nav i {
+  width: 50px;
+  height: 50px;
+  background-image: url(./dog.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav h3 {
+  font-family: "Rosarivo", serif;
+  font-weight: 400;
+  color: #ed5826;
+  font-size: 48px;
+  width: 80%;
+  text-align: center;
+  height: 68px;
+  padding: inherit;
+}
+
+.btn {
+  background: #ff4742;
+  border: 1px solid #ff4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #ff4742;
+}
+
+.btn:active {
+  opacity: 0.5;
+}
